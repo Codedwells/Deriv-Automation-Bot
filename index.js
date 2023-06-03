@@ -6,7 +6,7 @@ const app = express();
 app.use(Borgen({}));
 
 app.listen(7009, () => {
-  //subscribeTicks();
+  subscribeTicks();
   getActiveSymbols()
   Logger.info({ message: "The server is listening on port 7009" });
 });
